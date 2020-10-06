@@ -56,7 +56,7 @@ class LoginRegister: UIViewController {
     @objc func findHome() {
         let tabBar = MainTabBar()
         
-        modalPresentationStyle = .fullScreen
+        tabBar.modalPresentationStyle = .fullScreen
         present(tabBar, animated: false) {
             
         }
