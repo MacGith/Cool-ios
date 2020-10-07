@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "coolMindIcon.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "coolMindIcon@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "coolMindIcon@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "coolMindIcon.pdf",
+      "idiom" : "universal"
     }
   ],
   "info" : {

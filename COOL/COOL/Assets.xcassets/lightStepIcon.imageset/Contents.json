@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "lightStepIcon.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "lightStepIcon@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "lightStepIcon@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "lightStepIcon.pdf",
+      "idiom" : "universal"
     }
   ],
   "info" : {

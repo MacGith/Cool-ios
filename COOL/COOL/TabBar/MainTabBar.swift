@@ -29,4 +29,12 @@ class MainTabBar: UITabBarController {
         
         viewControllers = [home, history, stats, community, profile, discover]
     }
+    
+    /// https://stackoverflow.com/questions/59509915/override-traitcollection-in-ios-13
+    override var traitCollection: UITraitCollection {
+        let realTraits = super.traitCollection
+        let lieTrait = UITraitCollection.init(horizontalSizeClass: .regular)
+        
+        return UITraitCollection(traitsFrom: [realTraits, lieTrait])
+    }
 }
