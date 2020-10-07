@@ -16,7 +16,7 @@ class Home: UIViewController {
         title = "Home"
         view.backgroundColor = .white
         
-        configureUI()
+        //configureUI()
     }
     
     /// Following UI elements being configured:

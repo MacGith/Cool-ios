@@ -17,12 +17,70 @@
         <view contentMode="scaleToFill" id="p0h-bd-hoV">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <viewLayoutGuide key="safeArea" id="p0X-QN-mSV"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgO-iJ-P40">
+                    <rect key="frame" x="0.0" y="604" width="414" height="84"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coolmind" translatesAutoresizingMaskIntoConstraints="NO" id="oKO-Ah-jN8">
+                            <rect key="frame" x="55" y="19" width="66" height="47"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30980392159999998" green="0.7843137255" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="6bD-ja-x1l"/>
+                        <constraint firstItem="oKO-Ah-jN8" firstAttribute="leading" secondItem="mgO-iJ-P40" secondAttribute="leading" constant="55" id="SlR-Sr-JZ6"/>
+                        <constraint firstItem="oKO-Ah-jN8" firstAttribute="top" secondItem="mgO-iJ-P40" secondAttribute="top" constant="19" id="uE5-oA-Ggb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4YM-QG-ygB">
+                    <rect key="frame" x="0.0" y="691" width="414" height="84"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warmheart" translatesAutoresizingMaskIntoConstraints="NO" id="9GM-kf-a1T">
+                            <rect key="frame" x="65" y="24" width="46" height="40"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.49803921568627452" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="XDE-IN-4KT"/>
+                        <constraint firstItem="9GM-kf-a1T" firstAttribute="top" secondItem="4YM-QG-ygB" secondAttribute="top" constant="24" id="Xu8-kg-GGk"/>
+                        <constraint firstItem="9GM-kf-a1T" firstAttribute="leading" secondItem="4YM-QG-ygB" secondAttribute="leading" constant="65" id="pkz-lw-5ZQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgx-DU-NPg">
+                    <rect key="frame" x="0.0" y="778" width="414" height="84"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightstep" translatesAutoresizingMaskIntoConstraints="NO" id="kHo-Og-Qyq">
+                            <rect key="frame" x="37" y="15" width="102" height="52"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.55686274509803924" green="0.79607843137254897" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="4fD-mf-Odg"/>
+                        <constraint firstItem="kHo-Og-Qyq" firstAttribute="top" secondItem="hgx-DU-NPg" secondAttribute="top" constant="15" id="6YV-TT-AgP"/>
+                        <constraint firstItem="kHo-Og-Qyq" firstAttribute="leading" secondItem="hgx-DU-NPg" secondAttribute="leading" constant="37" id="cAh-Uy-h85"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Ne3-e3-JBN"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="-952" y="46"/>
+            <constraints>
+                <constraint firstItem="4YM-QG-ygB" firstAttribute="trailing" secondItem="Ne3-e3-JBN" secondAttribute="trailing" id="205-em-tkS"/>
+                <constraint firstItem="4YM-QG-ygB" firstAttribute="leading" secondItem="Ne3-e3-JBN" secondAttribute="leading" id="4PH-96-fiS"/>
+                <constraint firstItem="hgx-DU-NPg" firstAttribute="trailing" secondItem="Ne3-e3-JBN" secondAttribute="trailing" id="Dan-ch-j7G"/>
+                <constraint firstItem="hgx-DU-NPg" firstAttribute="bottom" secondItem="Ne3-e3-JBN" secondAttribute="bottom" id="Fb1-NB-vsV"/>
+                <constraint firstItem="mgO-iJ-P40" firstAttribute="trailing" secondItem="Ne3-e3-JBN" secondAttribute="trailing" id="HFH-nB-bGG"/>
+                <constraint firstItem="mgO-iJ-P40" firstAttribute="leading" secondItem="Ne3-e3-JBN" secondAttribute="leading" id="qb5-oN-6O9"/>
+                <constraint firstItem="hgx-DU-NPg" firstAttribute="top" secondItem="4YM-QG-ygB" secondAttribute="bottom" constant="3" id="sVr-3g-KMi"/>
+                <constraint firstItem="4YM-QG-ygB" firstAttribute="top" secondItem="mgO-iJ-P40" secondAttribute="bottom" constant="3" id="vqS-Fi-Jq8"/>
+                <constraint firstItem="hgx-DU-NPg" firstAttribute="leading" secondItem="Ne3-e3-JBN" secondAttribute="leading" id="xYm-i4-Mo2"/>
+            </constraints>
+            <point key="canvasLocation" x="-952.17391304347836" y="45.535714285714285"/>
         </view>
     </objects>
     <resources>
+        <image name="coolmind" width="66" height="47"/>
+        <image name="lightstep" width="102" height="52"/>
+        <image name="warmheart" width="46" height="40"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
