@@ -13,20 +13,24 @@ class MainTabBar: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let home = Home()
+        //let homeVC = Home()
         let history = History()
         let stats = Stats()
         let community = Community()
         let profile = Profile()
         let discover = Discover()
         
-        home.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), selectedImage: UIImage(systemName: "house.fill"))
-        history.tabBarItem = UITabBarItem(title: "History", image: UIImage(systemName: "clock.fill"), selectedImage: UIImage(systemName: "clock.fill"))
-        stats.tabBarItem = UITabBarItem(title: "Stats", image: UIImage(systemName: "chart.bar.fill"), selectedImage: UIImage(systemName: "chart.bar.fill"))
-        community.tabBarItem = UITabBarItem(title: "Community", image: UIImage(systemName: "person.3.fill"), selectedImage: UIImage(systemName: "person.3.fill"))
-        profile.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.circle.fill"), selectedImage: UIImage(systemName: "person.crop.circle.fill"))
-        discover.tabBarItem = UITabBarItem(title: "Discover", image: UIImage(systemName: "magnifyingglass.circle.fill"), selectedImage: UIImage(systemName: "magnifyingglass.circle.fill"))
+        //let homeVC =  Home(nibName: "Home", bundle: nil)
+
+        let homeVC = UINavigationController(rootViewController: Home(nibName: "Home", bundle: nil))
+              
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "Home"), selectedImage: UIImage(systemName: "house.fill"))
+        history.tabBarItem = UITabBarItem(title: "History", image: UIImage(named: "History"), selectedImage: UIImage(systemName: "clock.fill"))
+        stats.tabBarItem = UITabBarItem(title: "Stats", image: UIImage(named: "Stats"), selectedImage: UIImage(systemName: "chart.bar.fill"))
+        community.tabBarItem = UITabBarItem(title: "Community", image: UIImage(named: "Community"), selectedImage: UIImage(named: "Community"))
+        profile.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "Profile"), selectedImage: UIImage(named: "ProfileSelected"))
+        discover.tabBarItem = UITabBarItem(title: "Discover", image: UIImage(named: "Discover"), selectedImage: UIImage(systemName: "magnifyingglass.circle.fill"))
         
-        viewControllers = [home, history, stats, community, profile, discover]
+        viewControllers = [homeVC, history, stats, community, profile, discover]
     }
 }

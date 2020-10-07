@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0289E675252D84D6007EEB12 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0289E674252D84D6007EEB12 /* Home.xib */; };
 		02F5A68A252A1B50001F9753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A689252A1B50001F9753 /* AppDelegate.swift */; };
 		02F5A68E252A1B50001F9753 /* LoginRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A68D252A1B50001F9753 /* LoginRegister.swift */; };
 		02F5A693252A1B56001F9753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F5A692252A1B56001F9753 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0289E674252D84D6007EEB12 /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		02F5A686252A1B50001F9753 /* COOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F5A689252A1B50001F9753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02F5A68D252A1B50001F9753 /* LoginRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegister.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBC2A44252BDDF2009F787B /* Home.swift */,
+				0289E674252D84D6007EEB12 /* Home.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02F5A6C6252A3488001F9753 /* LaunchScreen.xib in Resources */,
+				0289E675252D84D6007EEB12 /* Home.xib in Resources */,
 				02F5A693252A1B56001F9753 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
