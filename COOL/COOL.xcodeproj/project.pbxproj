@@ -16,6 +16,7 @@
 		02F5A6C6252A3488001F9753 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F5A6C5252A3488001F9753 /* LaunchScreen.xib */; };
 		8B47FF922D42B053293B62E4 /* Pods_COOL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17078178D6D539FEBA309F49 /* Pods_COOL.framework */; };
 		CA95F89507A8288D18AA44D5 /* Pods_COOLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411AB93808105A6B96B2DAE0 /* Pods_COOLTests.framework */; };
+		DE4A4E54252E9C13000F5739 /* History.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE4A4E53252E9C13000F5739 /* History.xib */; };
 		DEBC2A45252BDDF2009F787B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC2A44252BDDF2009F787B /* Home.swift */; };
 		DEBC2A4E252BDF76009F787B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC2A4D252BDF76009F787B /* MainTabBar.swift */; };
 		DEBC2A5B252BE4E2009F787B /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC2A5A252BE4E2009F787B /* History.swift */; };
@@ -63,6 +64,7 @@
 		7CAF70CBA858DC837F4874F1 /* Pods-COOL-COOLUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL-COOLUITests.debug.xcconfig"; path = "Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		99949CB795D2310A922C7C13 /* Pods-COOL-COOLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL-COOLUITests.release.xcconfig"; path = "Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AB60D18C24265CCA0AD69420 /* Pods-COOL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL.debug.xcconfig"; path = "Target Support Files/Pods-COOL/Pods-COOL.debug.xcconfig"; sourceTree = "<group>"; };
+		DE4A4E53252E9C13000F5739 /* History.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = History.xib; sourceTree = "<group>"; };
 		DEBC2A44252BDDF2009F787B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		DEBC2A4D252BDF76009F787B /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		DEBC2A5A252BE4E2009F787B /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBC2A5A252BE4E2009F787B /* History.swift */,
+				DE4A4E53252E9C13000F5739 /* History.xib */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			files = (
 				02F5A6C6252A3488001F9753 /* LaunchScreen.xib in Resources */,
 				0289E675252D84D6007EEB12 /* Home.xib in Resources */,
+				DE4A4E54252E9C13000F5739 /* History.xib in Resources */,
 				02F5A693252A1B56001F9753 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
