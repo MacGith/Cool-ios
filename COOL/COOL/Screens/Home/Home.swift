@@ -48,11 +48,13 @@ class Home: UIViewController {
         // Score
         scoreLabel.text = "Score +125"
         
+        let textSize: CGFloat = 17
+        
         let attributedTitleCM = NSMutableAttributedString()
-        attributedTitleCM.append(NSAttributedString(string: "my ", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .regular)]))
-        attributedTitleCM.append(NSAttributedString(string: "Cool Mind ", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .bold)]))
-        attributedTitleCM.append(NSAttributedString(string: "day\n", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .regular)]))
-        attributedTitleCM.append(NSAttributedString(string: "How's my mindset today?", attributes: [.font: UIFont.systemFont(ofSize: 14, weight: .regular)]))
+        attributedTitleCM.append(NSAttributedString(string: "my ", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .regular)]))
+        attributedTitleCM.append(NSAttributedString(string: "Cool Mind ", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .bold)]))
+        attributedTitleCM.append(NSAttributedString(string: "day\n", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .regular)]))
+        attributedTitleCM.append(NSAttributedString(string: "How's my mindset today?", attributes: [.font: UIFont.systemFont(ofSize: 12, weight: .regular)]))
         
         coolMindText.attributedText = attributedTitleCM
         coolMindText.numberOfLines = 0
@@ -60,10 +62,10 @@ class Home: UIViewController {
         coolMindText.textColor = .white
         
         let attributedTitleWH = NSMutableAttributedString()
-        attributedTitleWH.append(NSAttributedString(string: "my ", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .regular)]))
-        attributedTitleWH.append(NSAttributedString(string: "Warm Heart ", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .bold)]))
-        attributedTitleWH.append(NSAttributedString(string: "day\n", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .regular)]))
-        attributedTitleWH.append(NSAttributedString(string: "How are my emotions today?", attributes: [.font: UIFont.systemFont(ofSize: 14, weight: .regular)]))
+        attributedTitleWH.append(NSAttributedString(string: "my ", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .regular)]))
+        attributedTitleWH.append(NSAttributedString(string: "Warm Heart ", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .bold)]))
+        attributedTitleWH.append(NSAttributedString(string: "day\n", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .regular)]))
+        attributedTitleWH.append(NSAttributedString(string: "How are my emotions today?", attributes: [.font: UIFont.systemFont(ofSize: 12, weight: .regular)]))
         
         warmHeartText.attributedText = attributedTitleWH
         warmHeartText.numberOfLines = 0
@@ -71,10 +73,10 @@ class Home: UIViewController {
         warmHeartText.textColor = .white
         
         let attributedTitleLS = NSMutableAttributedString()
-        attributedTitleLS.append(NSAttributedString(string: "my ", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .regular)]))
-        attributedTitleLS.append(NSAttributedString(string: "Light Step ", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .bold)]))
-        attributedTitleLS.append(NSAttributedString(string: "day\n", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .regular)]))
-        attributedTitleLS.append(NSAttributedString(string: "What's my carbon footprint?", attributes: [.font: UIFont.systemFont(ofSize: 14, weight: .regular)]))
+        attributedTitleLS.append(NSAttributedString(string: "my ", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .regular)]))
+        attributedTitleLS.append(NSAttributedString(string: "Light Step ", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .bold)]))
+        attributedTitleLS.append(NSAttributedString(string: "day\n", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .regular)]))
+        attributedTitleLS.append(NSAttributedString(string: "What's my carbon footprint?", attributes: [.font: UIFont.systemFont(ofSize: 12, weight: .regular)]))
         
         lightStepText.attributedText = attributedTitleLS
         lightStepText.numberOfLines = 0
