@@ -14,7 +14,7 @@ class MainTabBar: UITabBarController {
 
         // Do any additional setup after loading the view.
         //let homeVC = Home()
-        let history = History()
+        let history = History(nibName: "History", bundle: nil)
         let stats = Stats()
         let community = Community()
         let profile = Profile()

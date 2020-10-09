@@ -44,9 +44,13 @@ class Home: UIViewController {
         let dateFormatter = DateFormatter()
         
         dateFormatter.dateFormat = "EEEE MMMM d"
-        dateLabel.text = dateFormatter.string(from: today)
+        
         // Score
-        scoreLabel.text = "Score +125"
+        let score = "125"
+        
+        if let navigation = navigationController {
+            title = "\(dateFormatter.string(from: today))\tScore +\(score)"
+        }
         
         let textSize: CGFloat = 17
         
