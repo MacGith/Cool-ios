@@ -36,6 +36,10 @@ class Home: UIViewController {
         configureGestureRecognizers()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     /// Following UI elements being configured:
     ///
     fileprivate func configureUI() {
@@ -48,9 +52,7 @@ class Home: UIViewController {
         // Score
         let score = "125"
         
-        if let navigation = navigationController {
-            title = "\(dateFormatter.string(from: today))\tScore +\(score)"
-        }
+        navigationItem.title = "\(dateFormatter.string(from: today))\tScore +\(score)"
         
         let textSize: CGFloat = 17
         
@@ -61,9 +63,6 @@ class Home: UIViewController {
         attributedTitleCM.append(NSAttributedString(string: "How's my mindset today?", attributes: [.font: UIFont.systemFont(ofSize: 12, weight: .regular)]))
         
         coolMindText.attributedText = attributedTitleCM
-        coolMindText.numberOfLines = 0
-        coolMindText.lineBreakMode = .byWordWrapping
-        coolMindText.textColor = .white
         
         let attributedTitleWH = NSMutableAttributedString()
         attributedTitleWH.append(NSAttributedString(string: "my ", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .regular)]))
@@ -72,9 +71,6 @@ class Home: UIViewController {
         attributedTitleWH.append(NSAttributedString(string: "How are my emotions today?", attributes: [.font: UIFont.systemFont(ofSize: 12, weight: .regular)]))
         
         warmHeartText.attributedText = attributedTitleWH
-        warmHeartText.numberOfLines = 0
-        warmHeartText.lineBreakMode = .byWordWrapping
-        warmHeartText.textColor = .white
         
         let attributedTitleLS = NSMutableAttributedString()
         attributedTitleLS.append(NSAttributedString(string: "my ", attributes: [.font: UIFont.systemFont(ofSize: textSize, weight: .regular)]))
@@ -83,9 +79,6 @@ class Home: UIViewController {
         attributedTitleLS.append(NSAttributedString(string: "What's my carbon footprint?", attributes: [.font: UIFont.systemFont(ofSize: 12, weight: .regular)]))
         
         lightStepText.attributedText = attributedTitleLS
-        lightStepText.numberOfLines = 0
-        lightStepText.lineBreakMode = .byWordWrapping
-        lightStepText.textColor = .white
     }
     
     fileprivate func configureGestureRecognizers() {

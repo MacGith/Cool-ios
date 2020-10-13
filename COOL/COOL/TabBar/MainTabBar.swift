@@ -23,6 +23,7 @@ class MainTabBar: UITabBarController {
         //let homeVC =  Home(nibName: "Home", bundle: nil)
 
         let homeVC = UINavigationController(rootViewController: Home(nibName: "Home", bundle: nil))
+        //homeVC.navigationBar = NavigationBar()
               
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "Home"), selectedImage: UIImage(systemName: "house.fill"))
         history.tabBarItem = UITabBarItem(title: "History", image: UIImage(named: "History"), selectedImage: UIImage(systemName: "clock.fill"))
