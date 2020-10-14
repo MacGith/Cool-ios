@@ -41,10 +41,10 @@ extension AppDelegate: GIDSignInDelegate {
             print("Failed to log into Google:", error)
         }
         
-        guard  let idToken = user.authentication.idToken else {
+        guard  let idToken = user?.authentication.idToken else {
             return
         }
-        guard let accessToken = user.authentication.accessToken else {
+        guard let accessToken = user?.authentication.accessToken else {
             return
         }
         
