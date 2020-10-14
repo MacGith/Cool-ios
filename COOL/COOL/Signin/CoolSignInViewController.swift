@@ -34,10 +34,6 @@ class CoolSignInViewController: UIViewController {
         }
     }
     
-    @IBAction func googleSignInTapped() {
-        GIDSignIn.sharedInstance().signIn()
-    }
-    
     func isPreviouslySignIn() -> Bool {
         guard let isSignIn = GIDSignIn.sharedInstance()?.hasPreviousSignIn(), isSignIn else {
             return false

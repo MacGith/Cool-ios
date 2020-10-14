@@ -51,6 +51,12 @@ class Home: UIViewController {
         
         // Score
         let score = "125"
+        // Name
+        if let username = UserDefaults.standard.object(forKey: UDKeys.firstName) as? String {
+            nameLabel.text = "Hi, " + username
+        } else {
+            nameLabel.text = "Hi"
+        }
         
         navigationItem.title = "\(dateFormatter.string(from: today))\tScore +\(score)"
         

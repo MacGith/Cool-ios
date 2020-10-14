@@ -61,6 +61,7 @@ extension AppDelegate: GIDSignInDelegate {
                 return
             }
             print("Sucessfully logged into firebase with google:", uid)
+            self?.saveUserInfo(user: user)
   
             self?.launchTabBar()
         }
@@ -70,5 +71,17 @@ extension AppDelegate: GIDSignInDelegate {
         let tabBar = MainTabBar()
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         appDelegate?.window?.rootViewController = tabBar
+    }
+    
+    /// Save user info to User Defaults
+    /// - Parameter user: signed in user
+    private func saveUserInfo(user: GIDGoogleUser) {
+        let userDefaults = UserDefaults.standard
+        
+        userDefaults.set(user.profile.givenName, forKey: UDKeys.firstName)
+        _ = user.profile.name
+        
+        _ = user.profile.familyName
+        _ = user.profile.email
     }
 }

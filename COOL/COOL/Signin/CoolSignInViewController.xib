@@ -24,9 +24,6 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="APG-XT-B58"/>
                     </constraints>
-                    <connections>
-                        <action selector="googleSignInTapped" destination="-1" eventType="touchUpInside" id="Xtf-n8-ymz"/>
-                    </connections>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
