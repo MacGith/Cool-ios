@@ -63,7 +63,9 @@ extension AppDelegate: GIDSignInDelegate {
             print("Sucessfully logged into firebase with google:", uid)
             self?.saveUserInfo(user: user)
   
-            self?.launchTabBar()
+            DispatchQueue.main.async {
+                self?.launchTabBar()
+            }
         }
     }
     

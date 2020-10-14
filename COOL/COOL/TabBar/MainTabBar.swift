@@ -25,12 +25,12 @@ class MainTabBar: UITabBarController {
         let homeVC = UINavigationController(rootViewController: Home(nibName: "Home", bundle: nil))
         //homeVC.navigationBar = NavigationBar()
               
-        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "Home"), selectedImage: UIImage(systemName: "house.fill"))
-        history.tabBarItem = UITabBarItem(title: "History", image: UIImage(named: "History"), selectedImage: UIImage(systemName: "clock.fill"))
-        stats.tabBarItem = UITabBarItem(title: "Stats", image: UIImage(named: "Stats"), selectedImage: UIImage(systemName: "chart.bar.fill"))
-        community.tabBarItem = UITabBarItem(title: "Community", image: UIImage(named: "Community"), selectedImage: UIImage(named: "Community"))
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "Home"), selectedImage: UIImage(systemName: "HomeSelected"))
+        history.tabBarItem = UITabBarItem(title: "History", image: UIImage(named: "History"), selectedImage: UIImage(systemName: "HistorySelected"))
+        stats.tabBarItem = UITabBarItem(title: "Stats", image: UIImage(named: "Stats"), selectedImage: UIImage(systemName: "StatsSelected"))
+        community.tabBarItem = UITabBarItem(title: "Community", image: UIImage(named: "Community"), selectedImage: UIImage(named: "CommunitySelected"))
         profile.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "Profile"), selectedImage: UIImage(named: "ProfileSelected"))
-        discover.tabBarItem = UITabBarItem(title: "Discover", image: UIImage(named: "Discover"), selectedImage: UIImage(systemName: "magnifyingglass.circle.fill"))
+        discover.tabBarItem = UITabBarItem(title: "Discover", image: UIImage(named: "Discover"), selectedImage: UIImage(systemName: "DiscoverSelected"))
         
         viewControllers = [homeVC, history, stats, community, profile, discover]
     }
