@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022F0345253662AD0054D57F /* CoolSignInViewController.xib */; };
+		022F034B253670EE0054D57F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 022F034A253670EE0054D57F /* GoogleService-Info.plist */; };
 		0289E675252D84D6007EEB12 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0289E674252D84D6007EEB12 /* Home.xib */; };
 		02F5A68A252A1B50001F9753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A689252A1B50001F9753 /* AppDelegate.swift */; };
-		02F5A68E252A1B50001F9753 /* LoginRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A68D252A1B50001F9753 /* LoginRegister.swift */; };
+		02F5A68E252A1B50001F9753 /* CoolSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A68D252A1B50001F9753 /* CoolSignInViewController.swift */; };
 		02F5A693252A1B56001F9753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F5A692252A1B56001F9753 /* Assets.xcassets */; };
 		02F5A6A1252A1B57001F9753 /* COOLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A6A0252A1B57001F9753 /* COOLTests.swift */; };
 		02F5A6AC252A1B57001F9753 /* COOLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A6AB252A1B57001F9753 /* COOLUITests.swift */; };
@@ -45,10 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		022F0345253662AD0054D57F /* CoolSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolSignInViewController.xib; sourceTree = "<group>"; };
+		022F034A253670EE0054D57F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0289E674252D84D6007EEB12 /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		02F5A686252A1B50001F9753 /* COOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F5A689252A1B50001F9753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02F5A68D252A1B50001F9753 /* LoginRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegister.swift; sourceTree = "<group>"; };
+		02F5A68D252A1B50001F9753 /* CoolSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolSignInViewController.swift; sourceTree = "<group>"; };
 		02F5A692252A1B56001F9753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02F5A697252A1B56001F9753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02F5A69C252A1B57001F9753 /* COOLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COOLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		022F0344253662820054D57F /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				02F5A68D252A1B50001F9753 /* CoolSignInViewController.swift */,
+				022F0345253662AD0054D57F /* CoolSignInViewController.xib */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
 		02F5A67D252A1B50001F9753 = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +143,13 @@
 		02F5A688252A1B50001F9753 /* COOL */ = {
 			isa = PBXGroup;
 			children = (
+				022F0344253662820054D57F /* Signin */,
 				DEBC2A4C252BDF30009F787B /* TabBar */,
 				DE883CF9252BC79600FB78DA /* Screens */,
 				02F5A689252A1B50001F9753 /* AppDelegate.swift */,
 				02F5A692252A1B56001F9753 /* Assets.xcassets */,
 				02F5A697252A1B56001F9753 /* Info.plist */,
+				022F034A253670EE0054D57F /* GoogleService-Info.plist */,
 				02F5A6C5252A3488001F9753 /* LaunchScreen.xib */,
 			);
 			path = COOL;
@@ -190,7 +205,6 @@
 				DEBC2A56252BE4A6009F787B /* Stats */,
 				DEBC2A55252BE492009F787B /* History */,
 				DEBC2A43252BDDC7009F787B /* Home */,
-				02F5A68D252A1B50001F9753 /* LoginRegister.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -367,6 +381,8 @@
 				0289E675252D84D6007EEB12 /* Home.xib in Resources */,
 				DE4A4E54252E9C13000F5739 /* History.xib in Resources */,
 				02F5A693252A1B56001F9753 /* Assets.xcassets in Resources */,
+				022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */,
+				022F034B253670EE0054D57F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +548,7 @@
 				DEBC2A6A252BE545009F787B /* Profile.swift in Sources */,
 				DEBC2A6F252BE567009F787B /* Discover.swift in Sources */,
 				DEBC2A60252BE505009F787B /* Stats.swift in Sources */,
-				02F5A68E252A1B50001F9753 /* LoginRegister.swift in Sources */,
+				02F5A68E252A1B50001F9753 /* CoolSignInViewController.swift in Sources */,
 				DEBC2A45252BDDF2009F787B /* Home.swift in Sources */,
 				02F5A68A252A1B50001F9753 /* AppDelegate.swift in Sources */,
 				DEBC2A65252BE521009F787B /* Community.swift in Sources */,

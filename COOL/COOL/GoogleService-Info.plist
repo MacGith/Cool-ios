@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>248377948195-eui3gfg40rp9qh91q42bs406r80oi8em.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.248377948195-eui3gfg40rp9qh91q42bs406r80oi8em</string>
+	<key>API_KEY</key>
+	<string>AIzaSyArr2gv88jlrSDzv7J85J38anTZ09AP-Ck</string>
+	<key>GCM_SENDER_ID</key>
+	<string>248377948195</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.parvati.enterprise.cool</string>
+	<key>PROJECT_ID</key>
+	<string>cool-5f3cc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cool-5f3cc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:248377948195:ios:6bcaf25ba1080970479996</string>
+	<key>DATABASE_URL</key>
+	<string>https://cool-5f3cc.firebaseio.com</string>
+</dict>
+</plist>
