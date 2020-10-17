@@ -94,11 +94,9 @@ class Home: UIViewController {
     }
     
     @objc func coolMindViewTapped() {
-        let alert = UIAlertController(title: "User Interaction", message: "Cool Mind button tapped", preferredStyle: .alert)
-        present(alert, animated: true) {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                self.dismiss(animated: true, completion: nil)
-            }
+        let welcome = CoolMindWelcome(nibName: "CoolMindWelcome", bundle: nil)
+        if let navigation = navigationController {
+            navigation.pushViewController(welcome, animated: true)
         }
     }
     

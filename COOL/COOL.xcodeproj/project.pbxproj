@@ -19,6 +19,9 @@
 		8B47FF922D42B053293B62E4 /* Pods_COOL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17078178D6D539FEBA309F49 /* Pods_COOL.framework */; };
 		CA95F89507A8288D18AA44D5 /* Pods_COOLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411AB93808105A6B96B2DAE0 /* Pods_COOLTests.framework */; };
 		DE4A4E54252E9C13000F5739 /* History.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE4A4E53252E9C13000F5739 /* History.xib */; };
+		DE6423CB2538D16200A15130 /* CoolMindWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6423C92538D16200A15130 /* CoolMindWelcome.swift */; };
+		DE6423CC2538D16200A15130 /* CoolMindWelcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6423CA2538D16200A15130 /* CoolMindWelcome.xib */; };
+		DE677510253B3D9700B01A65 /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE67750F253B3D9700B01A65 /* Profile.xib */; };
 		DE9F207925375F2C009461CF /* UDKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F207825375F2C009461CF /* UDKeys.swift */; };
 		DEBC2A45252BDDF2009F787B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC2A44252BDDF2009F787B /* Home.swift */; };
 		DEBC2A4E252BDF76009F787B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC2A4D252BDF76009F787B /* MainTabBar.swift */; };
@@ -70,6 +73,9 @@
 		99949CB795D2310A922C7C13 /* Pods-COOL-COOLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL-COOLUITests.release.xcconfig"; path = "Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AB60D18C24265CCA0AD69420 /* Pods-COOL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL.debug.xcconfig"; path = "Target Support Files/Pods-COOL/Pods-COOL.debug.xcconfig"; sourceTree = "<group>"; };
 		DE4A4E53252E9C13000F5739 /* History.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = History.xib; sourceTree = "<group>"; };
+		DE6423C92538D16200A15130 /* CoolMindWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolMindWelcome.swift; sourceTree = "<group>"; };
+		DE6423CA2538D16200A15130 /* CoolMindWelcome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolMindWelcome.xib; sourceTree = "<group>"; };
+		DE67750F253B3D9700B01A65 /* Profile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
 		DE9F207825375F2C009461CF /* UDKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDKeys.swift; sourceTree = "<group>"; };
 		DEBC2A44252BDDF2009F787B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		DEBC2A4D252BDF76009F787B /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
@@ -199,6 +205,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DE6423B52538CDA300A15130 /* Cool Mind */ = {
+			isa = PBXGroup;
+			children = (
+				DE6423C82538D14B00A15130 /* Welcome */,
+			);
+			path = "Cool Mind";
+			sourceTree = "<group>";
+		};
+		DE6423C82538D14B00A15130 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				DE6423C92538D16200A15130 /* CoolMindWelcome.swift */,
+				DE6423CA2538D16200A15130 /* CoolMindWelcome.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		DE883CF9252BC79600FB78DA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +246,7 @@
 		DEBC2A43252BDDC7009F787B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DE6423B52538CDA300A15130 /* Cool Mind */,
 				DEBC2A44252BDDF2009F787B /* Home.swift */,
 				0289E674252D84D6007EEB12 /* Home.xib */,
 			);
@@ -266,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBC2A69252BE545009F787B /* Profile.swift */,
+				DE67750F253B3D9700B01A65 /* Profile.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -388,10 +413,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6423CC2538D16200A15130 /* CoolMindWelcome.xib in Resources */,
 				02F5A6C6252A3488001F9753 /* LaunchScreen.xib in Resources */,
 				0289E675252D84D6007EEB12 /* Home.xib in Resources */,
 				DE4A4E54252E9C13000F5739 /* History.xib in Resources */,
 				02F5A693252A1B56001F9753 /* Assets.xcassets in Resources */,
+				DE677510253B3D9700B01A65 /* Profile.xib in Resources */,
 				022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */,
 				022F034B253670EE0054D57F /* GoogleService-Info.plist in Resources */,
 			);
@@ -560,6 +587,7 @@
 				DEBC2A6F252BE567009F787B /* Discover.swift in Sources */,
 				DEBC2A60252BE505009F787B /* Stats.swift in Sources */,
 				02F5A68E252A1B50001F9753 /* CoolSignInViewController.swift in Sources */,
+				DE6423CB2538D16200A15130 /* CoolMindWelcome.swift in Sources */,
 				DEBC2A45252BDDF2009F787B /* Home.swift in Sources */,
 				02F5A68A252A1B50001F9753 /* AppDelegate.swift in Sources */,
 				DEBC2A65252BE521009F787B /* Community.swift in Sources */,

@@ -26,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = CoolSignInViewController()
         window?.makeKeyAndVisible()
         
+        // Change navigation controller appearance
+        let barButtonItemAppearance = UIBarButtonItem.appearance()
+        barButtonItemAppearance.setTitleTextAttributes([.foregroundColor: UIColor.clear], for: .normal)
+        barButtonItemAppearance.setTitleTextAttributes([.foregroundColor: UIColor.clear], for: .highlighted)
+        
         return true
     }
     
