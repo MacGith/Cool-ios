@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02012C682539ECF20079DC18 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 02012C672539ECF20079DC18 /* FacebookLogin */; };
+		02012C6A2539ECF20079DC18 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 02012C692539ECF20079DC18 /* FacebookCore */; };
+		02012C6C2539ECF20079DC18 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 02012C6B2539ECF20079DC18 /* FacebookShare */; };
+		021D2C68253B6ADE002BF969 /* WarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D2C67253B6ADE002BF969 /* WarmViewController.swift */; };
+		021D2C70253B6AEF002BF969 /* WarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021D2C6F253B6AEF002BF969 /* WarmViewController.xib */; };
 		022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022F0345253662AD0054D57F /* CoolSignInViewController.xib */; };
 		022F034B253670EE0054D57F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 022F034A253670EE0054D57F /* GoogleService-Info.plist */; };
 		0289E675252D84D6007EEB12 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0289E674252D84D6007EEB12 /* Home.xib */; };
@@ -48,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021D2C67253B6ADE002BF969 /* WarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmViewController.swift; sourceTree = "<group>"; };
+		021D2C6F253B6AEF002BF969 /* WarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarmViewController.xib; sourceTree = "<group>"; };
 		022F0345253662AD0054D57F /* CoolSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolSignInViewController.xib; sourceTree = "<group>"; };
 		022F034A253670EE0054D57F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0289E674252D84D6007EEB12 /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
@@ -88,6 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02012C682539ECF20079DC18 /* FacebookLogin in Frameworks */,
+				02012C6A2539ECF20079DC18 /* FacebookCore in Frameworks */,
+				02012C6C2539ECF20079DC18 /* FacebookShare in Frameworks */,
 				8B47FF922D42B053293B62E4 /* Pods_COOL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021D2C66253B6AB0002BF969 /* Warm */ = {
+			isa = PBXGroup;
+			children = (
+				021D2C67253B6ADE002BF969 /* WarmViewController.swift */,
+				021D2C6F253B6AEF002BF969 /* WarmViewController.xib */,
+			);
+			path = Warm;
+			sourceTree = "<group>";
+		};
 		022F0344253662820054D57F /* Signin */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +221,7 @@
 		DE883CF9252BC79600FB78DA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				021D2C66253B6AB0002BF969 /* Warm */,
 				DEBC2A59252BE4C2009F787B /* Discover */,
 				DEBC2A58252BE4BA009F787B /* Profile */,
 				DEBC2A57252BE4AF009F787B /* Community */,
@@ -297,6 +317,11 @@
 			dependencies = (
 			);
 			name = COOL;
+			packageProductDependencies = (
+				02012C672539ECF20079DC18 /* FacebookLogin */,
+				02012C692539ECF20079DC18 /* FacebookCore */,
+				02012C6B2539ECF20079DC18 /* FacebookShare */,
+			);
 			productName = COOL;
 			productReference = 02F5A686252A1B50001F9753 /* COOL.app */;
 			productType = "com.apple.product-type.application";
@@ -372,6 +397,9 @@
 				Base,
 			);
 			mainGroup = 02F5A67D252A1B50001F9753;
+			packageReferences = (
+				02012C662539ECF20079DC18 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = 02F5A687252A1B50001F9753 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -393,6 +421,7 @@
 				DE4A4E54252E9C13000F5739 /* History.xib in Resources */,
 				02F5A693252A1B56001F9753 /* Assets.xcassets in Resources */,
 				022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */,
+				021D2C70253B6AEF002BF969 /* WarmViewController.xib in Resources */,
 				022F034B253670EE0054D57F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +589,7 @@
 				DEBC2A6F252BE567009F787B /* Discover.swift in Sources */,
 				DEBC2A60252BE505009F787B /* Stats.swift in Sources */,
 				02F5A68E252A1B50001F9753 /* CoolSignInViewController.swift in Sources */,
+				021D2C68253B6ADE002BF969 /* WarmViewController.swift in Sources */,
 				DEBC2A45252BDDF2009F787B /* Home.swift in Sources */,
 				02F5A68A252A1B50001F9753 /* AppDelegate.swift in Sources */,
 				DEBC2A65252BE521009F787B /* Community.swift in Sources */,
@@ -888,6 +918,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02012C662539ECF20079DC18 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02012C672539ECF20079DC18 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02012C662539ECF20079DC18 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		02012C692539ECF20079DC18 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02012C662539ECF20079DC18 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		02012C6B2539ECF20079DC18 /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02012C662539ECF20079DC18 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02F5A67E252A1B50001F9753 /* Project object */;
 }

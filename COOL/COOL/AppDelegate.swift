@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import FBSDKCoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         
+        //FB
+        ApplicationDelegate.shared.application(
+                   application,
+                   didFinishLaunchingWithOptions: launchOptions
+               )
+        
         // Override point for customization after application launch.
         window = UIWindow()
         window?.rootViewController = CoolSignInViewController()
@@ -30,6 +37,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        ApplicationDelegate.shared.application(
+                    app,
+                    open: url,
+                    sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                    annotation: options[UIApplication.OpenURLOptionsKey.annotation]
+                )
         
         return GIDSignIn.sharedInstance().handle(url)
     }
@@ -49,7 +63,7 @@ extension AppDelegate: GIDSignInDelegate {
         }
         
         let credentials = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
-        
+        //here need to check if user is selected FB button
        
         Auth.auth().signIn(with: credentials) { [weak self] (result, error) in
             if let error = error {

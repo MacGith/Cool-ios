@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoolSignInViewController" customModule="COOL" customModuleProvider="target">
             <connections>
+                <outlet property="fbLoginButton" destination="NDe-ZH-QEv" id="QeJ-2N-3DS"/>
+                <outlet property="googleLoginButton" destination="7Nx-nV-lGT" id="FO2-Po-V0f"/>
                 <outlet property="view" destination="iN0-l3-epB" id="NKP-63-4Tf"/>
             </connections>
         </placeholder>
@@ -18,20 +20,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-nV-lGT" customClass="GIDSignInButton">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-nV-lGT" userLabel="Google Sign In Button" customClass="GIDSignInButton">
                     <rect key="frame" x="20" y="90" width="374" height="44"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="APG-XT-B58"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDe-ZH-QEv" userLabel="fbLogin">
+                    <rect key="frame" x="20" y="154" width="374" height="30"/>
+                    <state key="normal" title="FB Login"/>
+                    <connections>
+                        <action selector="fbLoginTappedWithSender:" destination="-1" eventType="touchUpInside" id="5Ng-Zl-C2h"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7Nx-nV-lGT" secondAttribute="trailing" constant="20" id="1sM-B5-qLw"/>
+                <constraint firstItem="NDe-ZH-QEv" firstAttribute="top" secondItem="7Nx-nV-lGT" secondAttribute="bottom" constant="20" id="EfA-I8-zxA"/>
                 <constraint firstItem="7Nx-nV-lGT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="46" id="IK0-TK-a7Q"/>
+                <constraint firstItem="NDe-ZH-QEv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="MTW-y9-32x"/>
                 <constraint firstItem="7Nx-nV-lGT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="an9-XT-0YK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NDe-ZH-QEv" secondAttribute="trailing" constant="20" id="mgA-2t-1Bq"/>
             </constraints>
             <point key="canvasLocation" x="-36.231884057971016" y="95.758928571428569"/>
         </view>
