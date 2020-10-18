@@ -14,10 +14,10 @@ class MainTabBar: UITabBarController {
 
         // Do any additional setup after loading the view.
         //let homeVC = Home()
-        let history = History(nibName: "History", bundle: nil)
+        let history = UINavigationController(rootViewController: History(nibName: "History", bundle: nil))
         let stats = Stats()
         let community = Community()
-        let profile = Profile()
+        let profile = UINavigationController(rootViewController: Profile(nibName: "Profile", bundle: nil))
         let discover = Discover()
         
         //let homeVC =  Home(nibName: "Home", bundle: nil)

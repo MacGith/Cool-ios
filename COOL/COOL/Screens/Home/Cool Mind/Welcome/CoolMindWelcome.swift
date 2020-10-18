@@ -1,21 +1,18 @@
 //
-//  History.swift
+//  CoolMindWelcome.swift
 //  COOL
 //
-//  Created by Yura on 10/5/20.
+//  Created by Yura on 10/15/20.
 //
 
 import UIKit
 
-class History: UIViewController {
+class CoolMindWelcome: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "History"
-        view.backgroundColor = .white
-        
         configureUI()
     }
     
@@ -25,10 +22,10 @@ class History: UIViewController {
         let dateFormatter = DateFormatter()
         
         dateFormatter.dateFormat = "EEEE MMMM d"
-        
         // Score
         let score = "125"
         
         navigationItem.title = "\(dateFormatter.string(from: today))\tScore +\(score)"
     }
+
 }
