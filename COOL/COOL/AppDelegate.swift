@@ -100,9 +100,7 @@ extension AppDelegate: GIDSignInDelegate {
         let userDefaults = UserDefaults.standard
         
         userDefaults.set(user.profile.givenName, forKey: UDKeys.firstName)
-        _ = user.profile.name
-        
-        _ = user.profile.familyName
-        _ = user.profile.email
+        userDefaults.set(user.profile.familyName, forKey: UDKeys.lastName)
+        userDefaults.set(user.profile.email, forKey: UDKeys.email)
     }
 }

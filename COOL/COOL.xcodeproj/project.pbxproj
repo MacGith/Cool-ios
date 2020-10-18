@@ -244,7 +244,6 @@
 		DE883CF9252BC79600FB78DA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				021D2C66253B6AB0002BF969 /* Warm */,
 				DEBC2A59252BE4C2009F787B /* Discover */,
 				DEBC2A58252BE4BA009F787B /* Profile */,
 				DEBC2A57252BE4AF009F787B /* Community */,
@@ -266,6 +265,7 @@
 		DEBC2A43252BDDC7009F787B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				021D2C66253B6AB0002BF969 /* Warm */,
 				DE6423B52538CDA300A15130 /* Cool Mind */,
 				DEBC2A44252BDDF2009F787B /* Home.swift */,
 				0289E674252D84D6007EEB12 /* Home.xib */,
