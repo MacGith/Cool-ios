@@ -82,6 +82,12 @@ class CoolSignInViewController: UIViewController {
                 return
               } else {
                 self.launchTabBar()
+                if let user = user {
+                    let _ = user.user.photoURL
+                    UserDefaults.standard.setValue(user.user.displayName, forKey: UDKeys.firstName)
+                    UserDefaults.standard.setValue(nil, forKey: UDKeys.lastName)
+                    UserDefaults.standard.setValue(user.user.email, forKey: UDKeys.email)
+                }
               }
             }
           }

@@ -20,4 +20,8 @@ public class UDKeys {
     class var email: String {
         return "email"
     }
+    
+    class var photo: String {
+        return "photo"
+    }
 }
