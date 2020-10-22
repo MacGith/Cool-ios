@@ -101,13 +101,7 @@ class Home: UIViewController {
     }
     
     @objc func warmHeartViewTapped() {
-        /*let alert = UIAlertController(title: "User Interaction", message: "Warm Heart button tapped", preferredStyle: .alert)
-        present(alert, animated: true) {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                self.dismiss(animated: true, completion: nil)
-            }
-        }*/
-        let warmVC = WarmViewController()
+        let warmVC = WarmViewController(nibName: "WarmViewController", bundle: nil)
         self.navigationController?.pushViewController(warmVC, animated: true)
     }
     

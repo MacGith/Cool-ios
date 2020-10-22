@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02012C682539ECF20079DC18 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 02012C672539ECF20079DC18 /* FacebookLogin */; };
-		02012C6A2539ECF20079DC18 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 02012C692539ECF20079DC18 /* FacebookCore */; };
-		02012C6C2539ECF20079DC18 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 02012C6B2539ECF20079DC18 /* FacebookShare */; };
+		02051774253F27A5004A5F8C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 02051773253F27A5004A5F8C /* SwiftPackageProductDependency */; };
+		02051776253F27A5004A5F8C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 02051775253F27A5004A5F8C /* SwiftPackageProductDependency */; };
+		02051778253F27A5004A5F8C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 02051777253F27A5004A5F8C /* SwiftPackageProductDependency */; };
 		021D2C68253B6ADE002BF969 /* WarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D2C67253B6ADE002BF969 /* WarmViewController.swift */; };
 		021D2C70253B6AEF002BF969 /* WarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021D2C6F253B6AEF002BF969 /* WarmViewController.xib */; };
 		022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022F0345253662AD0054D57F /* CoolSignInViewController.xib */; };
@@ -56,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021BB5B8253E5C4500D942F2 /* Production.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Production.plist; sourceTree = "<group>"; };
 		021D2C67253B6ADE002BF969 /* WarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmViewController.swift; sourceTree = "<group>"; };
 		021D2C6F253B6AEF002BF969 /* WarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarmViewController.xib; sourceTree = "<group>"; };
 		022F0345253662AD0054D57F /* CoolSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolSignInViewController.xib; sourceTree = "<group>"; };
@@ -65,7 +66,7 @@
 		02F5A689252A1B50001F9753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02F5A68D252A1B50001F9753 /* CoolSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolSignInViewController.swift; sourceTree = "<group>"; };
 		02F5A692252A1B56001F9753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		02F5A697252A1B56001F9753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F5A697252A1B56001F9753 /* Enterprise.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Enterprise.plist; sourceTree = "<group>"; };
 		02F5A69C252A1B57001F9753 /* COOLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COOLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F5A6A0252A1B57001F9753 /* COOLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COOLTests.swift; sourceTree = "<group>"; };
 		02F5A6A2252A1B57001F9753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,11 +75,16 @@
 		02F5A6AD252A1B57001F9753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02F5A6C5252A3488001F9753 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		17078178D6D539FEBA309F49 /* Pods_COOL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COOL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9373E71A880282010C1B11 /* Pods-COOLTests.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOLTests.prod.xcconfig"; path = "Target Support Files/Pods-COOLTests/Pods-COOLTests.prod.xcconfig"; sourceTree = "<group>"; };
 		411AB93808105A6B96B2DAE0 /* Pods_COOLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COOLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48606E24DC3BDB2C58A6FBCF /* Pods-COOL-COOLUITests.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL-COOLUITests.prod.xcconfig"; path = "Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests.prod.xcconfig"; sourceTree = "<group>"; };
+		5EE8DB3E5AC757AD4C11D519 /* Pods-COOL.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL.development.xcconfig"; path = "Target Support Files/Pods-COOL/Pods-COOL.development.xcconfig"; sourceTree = "<group>"; };
 		7855CD6777F6C15A46187C1E /* Pods-COOL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL.release.xcconfig"; path = "Target Support Files/Pods-COOL/Pods-COOL.release.xcconfig"; sourceTree = "<group>"; };
 		7CAF70CBA858DC837F4874F1 /* Pods-COOL-COOLUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL-COOLUITests.debug.xcconfig"; path = "Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		99949CB795D2310A922C7C13 /* Pods-COOL-COOLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL-COOLUITests.release.xcconfig"; path = "Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9E3512A883FEE159AC5E7BC1 /* Pods-COOL-COOLUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL-COOLUITests.development.xcconfig"; path = "Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests.development.xcconfig"; sourceTree = "<group>"; };
 		AB60D18C24265CCA0AD69420 /* Pods-COOL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL.debug.xcconfig"; path = "Target Support Files/Pods-COOL/Pods-COOL.debug.xcconfig"; sourceTree = "<group>"; };
+		CF00AE0CAA5184CB608A3E27 /* Pods-COOL.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOL.prod.xcconfig"; path = "Target Support Files/Pods-COOL/Pods-COOL.prod.xcconfig"; sourceTree = "<group>"; };
 		DE4A4E53252E9C13000F5739 /* History.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = History.xib; sourceTree = "<group>"; };
 		DE6423C92538D16200A15130 /* CoolMindWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolMindWelcome.swift; sourceTree = "<group>"; };
 		DE6423CA2538D16200A15130 /* CoolMindWelcome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolMindWelcome.xib; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 		DEBC2A64252BE521009F787B /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
 		DEBC2A69252BE545009F787B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DEBC2A6E252BE567009F787B /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		E52928D5A3DFB19F8B6B98D9 /* Pods-COOLTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOLTests.development.xcconfig"; path = "Target Support Files/Pods-COOLTests/Pods-COOLTests.development.xcconfig"; sourceTree = "<group>"; };
 		E9E5F32D79518816561FE5D1 /* Pods-COOLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOLTests.release.xcconfig"; path = "Target Support Files/Pods-COOLTests/Pods-COOLTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA74D348CF89C434EB96388F /* Pods-COOLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOLTests.debug.xcconfig"; path = "Target Support Files/Pods-COOLTests/Pods-COOLTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F8A865FCC02C3AD45DDF7896 /* Pods_COOL_COOLUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COOL_COOLUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,10 +108,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02012C682539ECF20079DC18 /* FacebookLogin in Frameworks */,
-				02012C6A2539ECF20079DC18 /* FacebookCore in Frameworks */,
-				02012C6C2539ECF20079DC18 /* FacebookShare in Frameworks */,
+				02051774253F27A5004A5F8C /* BuildFile in Frameworks */,
 				8B47FF922D42B053293B62E4 /* Pods_COOL.framework in Frameworks */,
+				02051776253F27A5004A5F8C /* BuildFile in Frameworks */,
+				02051778253F27A5004A5F8C /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +183,8 @@
 				DE883CF9252BC79600FB78DA /* Screens */,
 				02F5A689252A1B50001F9753 /* AppDelegate.swift */,
 				02F5A692252A1B56001F9753 /* Assets.xcassets */,
-				02F5A697252A1B56001F9753 /* Info.plist */,
+				02F5A697252A1B56001F9753 /* Enterprise.plist */,
+				021BB5B8253E5C4500D942F2 /* Production.plist */,
 				022F034A253670EE0054D57F /* GoogleService-Info.plist */,
 				02F5A6C5252A3488001F9753 /* LaunchScreen.xib */,
 			);
@@ -220,6 +228,12 @@
 				99949CB795D2310A922C7C13 /* Pods-COOL-COOLUITests.release.xcconfig */,
 				EA74D348CF89C434EB96388F /* Pods-COOLTests.debug.xcconfig */,
 				E9E5F32D79518816561FE5D1 /* Pods-COOLTests.release.xcconfig */,
+				5EE8DB3E5AC757AD4C11D519 /* Pods-COOL.development.xcconfig */,
+				CF00AE0CAA5184CB608A3E27 /* Pods-COOL.prod.xcconfig */,
+				9E3512A883FEE159AC5E7BC1 /* Pods-COOL-COOLUITests.development.xcconfig */,
+				48606E24DC3BDB2C58A6FBCF /* Pods-COOL-COOLUITests.prod.xcconfig */,
+				E52928D5A3DFB19F8B6B98D9 /* Pods-COOLTests.development.xcconfig */,
+				1B9373E71A880282010C1B11 /* Pods-COOLTests.prod.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -334,8 +348,8 @@
 				02F5A682252A1B50001F9753 /* Sources */,
 				02F5A683252A1B50001F9753 /* Frameworks */,
 				02F5A684252A1B50001F9753 /* Resources */,
-				A9649EB126BAA4580C40741E /* [CP] Embed Pods Frameworks */,
-				D45CF2478777A6F0E926EDAD /* [CP] Copy Pods Resources */,
+				49B18BC82CBFACA7B9A8FE72 /* [CP] Embed Pods Frameworks */,
+				49695F7F82B4F749A161B2FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,9 +357,9 @@
 			);
 			name = COOL;
 			packageProductDependencies = (
-				02012C672539ECF20079DC18 /* FacebookLogin */,
-				02012C692539ECF20079DC18 /* FacebookCore */,
-				02012C6B2539ECF20079DC18 /* FacebookShare */,
+				02051773253F27A5004A5F8C /* SwiftPackageProductDependency */,
+				02051775253F27A5004A5F8C /* SwiftPackageProductDependency */,
+				02051777253F27A5004A5F8C /* SwiftPackageProductDependency */,
 			);
 			productName = COOL;
 			productReference = 02F5A686252A1B50001F9753 /* COOL.app */;
@@ -378,8 +392,8 @@
 				02F5A6A3252A1B57001F9753 /* Sources */,
 				02F5A6A4252A1B57001F9753 /* Frameworks */,
 				02F5A6A5252A1B57001F9753 /* Resources */,
-				52F4C6A37BDFDD2DB771F4B5 /* [CP] Embed Pods Frameworks */,
-				4A2AA10775B405E075C6EB3B /* [CP] Copy Pods Resources */,
+				6C169C383C6F4AF96F0F3D73 /* [CP] Embed Pods Frameworks */,
+				C92B01EB0D0A2CE8BDD07966 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -423,7 +437,7 @@
 			);
 			mainGroup = 02F5A67D252A1B50001F9753;
 			packageReferences = (
-				02012C662539ECF20079DC18 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				02051772253F27A5004A5F8C /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 02F5A687252A1B50001F9753 /* Products */;
 			projectDirPath = "";
@@ -492,38 +506,38 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4A2AA10775B405E075C6EB3B /* [CP] Copy Pods Resources */ = {
+		49695F7F82B4F749A161B2FC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		52F4C6A37BDFDD2DB771F4B5 /* [CP] Embed Pods Frameworks */ = {
+		49B18BC82CBFACA7B9A8FE72 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5F7C0ABE57441DCBCDDDDD83 /* [CP] Check Pods Manifest.lock */ = {
@@ -548,6 +562,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6C169C383C6F4AF96F0F3D73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7C5A506DD8E5994A3DBBE309 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,38 +601,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A9649EB126BAA4580C40741E /* [CP] Embed Pods Frameworks */ = {
+		C92B01EB0D0A2CE8BDD07966 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D45CF2478777A6F0E926EDAD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COOL/Pods-COOL-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COOL-COOLUITests/Pods-COOL-COOLUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -658,7 +672,130 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02F5A6AE252A1B57001F9753 /* Debug */ = {
+		021BB5C9253E9D4E00D942F2 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Prod;
+		};
+		021BB5CA253E9D4E00D942F2 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF00AE0CAA5184CB608A3E27 /* Pods-COOL.prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7T4GSVKLCG;
+				INFOPLIST_FILE = COOL/Production.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parvati.enterprise.cool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Cool App Development";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Prod;
+		};
+		021BB5CB253E9D4E00D942F2 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9373E71A880282010C1B11 /* Pods-COOLTests.prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L6TEPJ988Q;
+				INFOPLIST_FILE = COOLTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = paravathi.COOLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COOL.app/COOL";
+			};
+			name = Prod;
+		};
+		021BB5CC253E9D4E00D942F2 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48606E24DC3BDB2C58A6FBCF /* Pods-COOL-COOLUITests.prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L6TEPJ988Q;
+				INFOPLIST_FILE = COOLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = paravathi.COOLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = COOL;
+			};
+			name = Prod;
+		};
+		02F5A6AE252A1B57001F9753 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -715,75 +852,25 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		02F5A6AF252A1B57001F9753 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Development;
 		};
-		02F5A6B1252A1B57001F9753 /* Debug */ = {
+		02F5A6B1252A1B57001F9753 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB60D18C24265CCA0AD69420 /* Pods-COOL.debug.xcconfig */;
+			baseConfigurationReference = 5EE8DB3E5AC757AD4C11D519 /* Pods-COOL.development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7T4GSVKLCG;
-				INFOPLIST_FILE = COOL/Info.plist;
+				ENABLE_BITCODE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				INFOPLIST_FILE = COOL/Enterprise.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -793,34 +880,13 @@
 				PROVISIONING_PROFILE_SPECIFIER = "Cool App Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
 			};
-			name = Debug;
+			name = Development;
 		};
-		02F5A6B2252A1B57001F9753 /* Release */ = {
+		02F5A6B4252A1B57001F9753 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7855CD6777F6C15A46187C1E /* Pods-COOL.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7T4GSVKLCG;
-				INFOPLIST_FILE = COOL/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.parvati.enterprise.cool;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Cool App Development";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		02F5A6B4252A1B57001F9753 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA74D348CF89C434EB96388F /* Pods-COOLTests.debug.xcconfig */;
+			baseConfigurationReference = E52928D5A3DFB19F8B6B98D9 /* Pods-COOLTests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -839,34 +905,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COOL.app/COOL";
 			};
-			name = Debug;
+			name = Development;
 		};
-		02F5A6B5252A1B57001F9753 /* Release */ = {
+		02F5A6B7252A1B57001F9753 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9E5F32D79518816561FE5D1 /* Pods-COOLTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L6TEPJ988Q;
-				INFOPLIST_FILE = COOLTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = paravathi.COOLTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COOL.app/COOL";
-			};
-			name = Release;
-		};
-		02F5A6B7252A1B57001F9753 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CAF70CBA858DC837F4874F1 /* Pods-COOL-COOLUITests.debug.xcconfig */;
+			baseConfigurationReference = 9E3512A883FEE159AC5E7BC1 /* Pods-COOL-COOLUITests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -883,28 +926,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = COOL;
 			};
-			name = Debug;
-		};
-		02F5A6B8252A1B57001F9753 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99949CB795D2310A922C7C13 /* Pods-COOL-COOLUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L6TEPJ988Q;
-				INFOPLIST_FILE = COOLUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = paravathi.COOLUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = COOL;
-			};
-			name = Release;
+			name = Development;
 		};
 /* End XCBuildConfiguration section */
 
@@ -912,43 +934,43 @@
 		02F5A681252A1B50001F9753 /* Build configuration list for PBXProject "COOL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02F5A6AE252A1B57001F9753 /* Debug */,
-				02F5A6AF252A1B57001F9753 /* Release */,
+				02F5A6AE252A1B57001F9753 /* Development */,
+				021BB5C9253E9D4E00D942F2 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		02F5A6B0252A1B57001F9753 /* Build configuration list for PBXNativeTarget "COOL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02F5A6B1252A1B57001F9753 /* Debug */,
-				02F5A6B2252A1B57001F9753 /* Release */,
+				02F5A6B1252A1B57001F9753 /* Development */,
+				021BB5CA253E9D4E00D942F2 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		02F5A6B3252A1B57001F9753 /* Build configuration list for PBXNativeTarget "COOLTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02F5A6B4252A1B57001F9753 /* Debug */,
-				02F5A6B5252A1B57001F9753 /* Release */,
+				02F5A6B4252A1B57001F9753 /* Development */,
+				021BB5CB253E9D4E00D942F2 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		02F5A6B6252A1B57001F9753 /* Build configuration list for PBXNativeTarget "COOLUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02F5A6B7252A1B57001F9753 /* Debug */,
-				02F5A6B8252A1B57001F9753 /* Release */,
+				02F5A6B7252A1B57001F9753 /* Development */,
+				021BB5CC253E9D4E00D942F2 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		02012C662539ECF20079DC18 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+		02051772253F27A5004A5F8C /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
 			requirement = {
@@ -959,20 +981,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		02012C672539ECF20079DC18 /* FacebookLogin */ = {
+		02051773253F27A5004A5F8C /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 02012C662539ECF20079DC18 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			package = 02051772253F27A5004A5F8C /* RemoteSwiftPackageReference */;
 			productName = FacebookLogin;
 		};
-		02012C692539ECF20079DC18 /* FacebookCore */ = {
+		02051775253F27A5004A5F8C /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 02012C662539ECF20079DC18 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookCore;
-		};
-		02012C6B2539ECF20079DC18 /* FacebookShare */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 02012C662539ECF20079DC18 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			package = 02051772253F27A5004A5F8C /* RemoteSwiftPackageReference */;
 			productName = FacebookShare;
+		};
+		02051777253F27A5004A5F8C /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02051772253F27A5004A5F8C /* RemoteSwiftPackageReference */;
+			productName = FacebookCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
