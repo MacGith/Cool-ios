@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02051774253F27A5004A5F8C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 02051773253F27A5004A5F8C /* SwiftPackageProductDependency */; };
-		02051776253F27A5004A5F8C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 02051775253F27A5004A5F8C /* SwiftPackageProductDependency */; };
-		02051778253F27A5004A5F8C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 02051777253F27A5004A5F8C /* SwiftPackageProductDependency */; };
+		02051774253F27A5004A5F8C /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 02051773253F27A5004A5F8C /* FacebookLogin */; };
+		02051776253F27A5004A5F8C /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 02051775253F27A5004A5F8C /* FacebookShare */; };
+		02051778253F27A5004A5F8C /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 02051777253F27A5004A5F8C /* FacebookCore */; };
 		021D2C68253B6ADE002BF969 /* WarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D2C67253B6ADE002BF969 /* WarmViewController.swift */; };
 		021D2C70253B6AEF002BF969 /* WarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021D2C6F253B6AEF002BF969 /* WarmViewController.xib */; };
 		022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022F0345253662AD0054D57F /* CoolSignInViewController.xib */; };
@@ -112,10 +112,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02051774253F27A5004A5F8C /* BuildFile in Frameworks */,
+				02051774253F27A5004A5F8C /* FacebookLogin in Frameworks */,
 				8B47FF922D42B053293B62E4 /* Pods_COOL.framework in Frameworks */,
-				02051776253F27A5004A5F8C /* BuildFile in Frameworks */,
-				02051778253F27A5004A5F8C /* BuildFile in Frameworks */,
+				02051776253F27A5004A5F8C /* FacebookShare in Frameworks */,
+				02051778253F27A5004A5F8C /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,9 +379,9 @@
 			);
 			name = COOL;
 			packageProductDependencies = (
-				02051773253F27A5004A5F8C /* SwiftPackageProductDependency */,
-				02051775253F27A5004A5F8C /* SwiftPackageProductDependency */,
-				02051777253F27A5004A5F8C /* SwiftPackageProductDependency */,
+				02051773253F27A5004A5F8C /* FacebookLogin */,
+				02051775253F27A5004A5F8C /* FacebookShare */,
+				02051777253F27A5004A5F8C /* FacebookCore */,
 			);
 			productName = COOL;
 			productReference = 02F5A686252A1B50001F9753 /* COOL.app */;
@@ -459,7 +459,7 @@
 			);
 			mainGroup = 02F5A67D252A1B50001F9753;
 			packageReferences = (
-				02051772253F27A5004A5F8C /* RemoteSwiftPackageReference */,
+				02051772253F27A5004A5F8C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 02F5A687252A1B50001F9753 /* Products */;
 			projectDirPath = "";
@@ -994,7 +994,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		02051772253F27A5004A5F8C /* RemoteSwiftPackageReference */ = {
+		02051772253F27A5004A5F8C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
 			requirement = {
@@ -1005,19 +1005,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		02051773253F27A5004A5F8C /* SwiftPackageProductDependency */ = {
+		02051773253F27A5004A5F8C /* FacebookLogin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 02051772253F27A5004A5F8C /* RemoteSwiftPackageReference */;
+			package = 02051772253F27A5004A5F8C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookLogin;
 		};
-		02051775253F27A5004A5F8C /* SwiftPackageProductDependency */ = {
+		02051775253F27A5004A5F8C /* FacebookShare */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 02051772253F27A5004A5F8C /* RemoteSwiftPackageReference */;
+			package = 02051772253F27A5004A5F8C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookShare;
 		};
-		02051777253F27A5004A5F8C /* SwiftPackageProductDependency */ = {
+		02051777253F27A5004A5F8C /* FacebookCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 02051772253F27A5004A5F8C /* RemoteSwiftPackageReference */;
+			package = 02051772253F27A5004A5F8C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookCore;
 		};
 /* End XCSwiftPackageProductDependency section */
