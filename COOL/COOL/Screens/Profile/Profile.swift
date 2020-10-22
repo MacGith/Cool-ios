@@ -42,6 +42,13 @@ class Profile: UIViewController {
         
         navigationItem.title = "\(dateFormatter.string(from: today))\tScore +\(score)"
         
+        // Photo
+        if let photo = UserDefaults.standard.object(forKey: UDKeys.photo) as? UIImage {
+            photoView.image = photo
+        } else {
+            photoView.image = UIImage(systemName: "person.crop.circle.fill")
+        }
+        
         // Name
         let firstName = UserDefaults.standard.object(forKey: UDKeys.firstName) as? String
         let lastName = UserDefaults.standard.object(forKey: UDKeys.lastName) as? String
