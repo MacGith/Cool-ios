@@ -10,6 +10,7 @@
 		02051774253F27A5004A5F8C /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 02051773253F27A5004A5F8C /* FacebookLogin */; };
 		02051776253F27A5004A5F8C /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 02051775253F27A5004A5F8C /* FacebookShare */; };
 		02051778253F27A5004A5F8C /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 02051777253F27A5004A5F8C /* FacebookCore */; };
+		0216285225429BA60019974B /* GoogleService-InfoProd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0216285125429BA60019974B /* GoogleService-InfoProd.plist */; };
 		021D2C68253B6ADE002BF969 /* WarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D2C67253B6ADE002BF969 /* WarmViewController.swift */; };
 		021D2C70253B6AEF002BF969 /* WarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021D2C6F253B6AEF002BF969 /* WarmViewController.xib */; };
 		022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022F0345253662AD0054D57F /* CoolSignInViewController.xib */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0216285125429BA60019974B /* GoogleService-InfoProd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-InfoProd.plist"; sourceTree = "<group>"; };
 		021BB5B8253E5C4500D942F2 /* Production.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Production.plist; sourceTree = "<group>"; };
 		021D2C67253B6ADE002BF969 /* WarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmViewController.swift; sourceTree = "<group>"; };
 		021D2C6F253B6AEF002BF969 /* WarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarmViewController.xib; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				02F5A692252A1B56001F9753 /* Assets.xcassets */,
 				02F5A697252A1B56001F9753 /* Enterprise.plist */,
 				021BB5B8253E5C4500D942F2 /* Production.plist */,
+				0216285125429BA60019974B /* GoogleService-InfoProd.plist */,
 				022F034A253670EE0054D57F /* GoogleService-Info.plist */,
 				02F5A6C5252A3488001F9753 /* LaunchScreen.xib */,
 			);
@@ -479,6 +482,7 @@
 			files = (
 				DE6423CC2538D16200A15130 /* CoolMindWelcome.xib in Resources */,
 				02F5A6C6252A3488001F9753 /* LaunchScreen.xib in Resources */,
+				0216285225429BA60019974B /* GoogleService-InfoProd.plist in Resources */,
 				0289E675252D84D6007EEB12 /* Home.xib in Resources */,
 				DE4A4E54252E9C13000F5739 /* History.xib in Resources */,
 				02F5A693252A1B56001F9753 /* Assets.xcassets in Resources */,
@@ -761,6 +765,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7T4GSVKLCG;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				INFOPLIST_FILE = COOL/Production.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -893,6 +898,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7T4GSVKLCG;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = COOL/Enterprise.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
