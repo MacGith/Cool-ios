@@ -39,6 +39,10 @@
 	<string>768745140633550</string>
 	<key>FacebookDisplayName</key>
 	<string>Cool</string>
+	<key>FacebookAdvertiserIDCollectionEnabled</key>
+	<false/>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
