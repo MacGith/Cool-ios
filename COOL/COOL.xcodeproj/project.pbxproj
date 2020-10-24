@@ -38,6 +38,7 @@
 		DEBC2A65252BE521009F787B /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC2A64252BE521009F787B /* Community.swift */; };
 		DEBC2A6A252BE545009F787B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC2A69252BE545009F787B /* Profile.swift */; };
 		DEBC2A6F252BE567009F787B /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC2A6E252BE567009F787B /* Discover.swift */; };
+		DED4FC9E2544AEAB00F04AB2 /* ColorSchemeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4FC9D2544AEAB00F04AB2 /* ColorSchemeButton.swift */; };
 		F3829E2A7128C502C730479C /* Pods_COOL_COOLUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A865FCC02C3AD45DDF7896 /* Pods_COOL_COOLUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		DEBC2A64252BE521009F787B /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
 		DEBC2A69252BE545009F787B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DEBC2A6E252BE567009F787B /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		DED4FC9D2544AEAB00F04AB2 /* ColorSchemeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeButton.swift; sourceTree = "<group>"; };
 		E52928D5A3DFB19F8B6B98D9 /* Pods-COOLTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOLTests.development.xcconfig"; path = "Target Support Files/Pods-COOLTests/Pods-COOLTests.development.xcconfig"; sourceTree = "<group>"; };
 		E9E5F32D79518816561FE5D1 /* Pods-COOLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOLTests.release.xcconfig"; path = "Target Support Files/Pods-COOLTests/Pods-COOLTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA74D348CF89C434EB96388F /* Pods-COOLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COOLTests.debug.xcconfig"; path = "Target Support Files/Pods-COOLTests/Pods-COOLTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			children = (
 				DEBC2A69252BE545009F787B /* Profile.swift */,
 				DE67750F253B3D9700B01A65 /* Profile.xib */,
+				DED4FC9D2544AEAB00F04AB2 /* ColorSchemeButton.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 				DEBC2A60252BE505009F787B /* Stats.swift in Sources */,
 				02F5A68E252A1B50001F9753 /* CoolSignInViewController.swift in Sources */,
 				DE47CA32253F589F001B04DD /* CoolUser.swift in Sources */,
+				DED4FC9E2544AEAB00F04AB2 /* ColorSchemeButton.swift in Sources */,
 				DE47CA3E253F5A39001B04DD /* ViewModel.swift in Sources */,
 				021D2C68253B6ADE002BF969 /* WarmViewController.swift in Sources */,
 				DE6423CB2538D16200A15130 /* CoolMindWelcome.swift in Sources */,
@@ -894,9 +898,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7T4GSVKLCG;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6F5KHKKNX;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_MASTER_OBJECT_FILE = NO;
@@ -907,7 +911,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.parvati.enterprise.cool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Cool App Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
