@@ -10,11 +10,12 @@
 		02051774253F27A5004A5F8C /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 02051773253F27A5004A5F8C /* FacebookLogin */; };
 		02051776253F27A5004A5F8C /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 02051775253F27A5004A5F8C /* FacebookShare */; };
 		02051778253F27A5004A5F8C /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 02051777253F27A5004A5F8C /* FacebookCore */; };
-		0216285225429BA60019974B /* GoogleService-InfoProd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0216285125429BA60019974B /* GoogleService-InfoProd.plist */; };
+		0213B8F425462504000B58D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0213B8F325462504000B58D0 /* GoogleService-Info.plist */; };
 		021D2C68253B6ADE002BF969 /* WarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D2C67253B6ADE002BF969 /* WarmViewController.swift */; };
 		021D2C70253B6AEF002BF969 /* WarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021D2C6F253B6AEF002BF969 /* WarmViewController.xib */; };
 		022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022F0345253662AD0054D57F /* CoolSignInViewController.xib */; };
-		022F034B253670EE0054D57F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 022F034A253670EE0054D57F /* GoogleService-Info.plist */; };
+		027F720B2546230B00BDAD55 /* GoogleService-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027F72092546230B00BDAD55 /* GoogleService-Dev.plist */; };
+		027F720C2546230B00BDAD55 /* GoogleService-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027F720A2546230B00BDAD55 /* GoogleService-Prod.plist */; };
 		0289E675252D84D6007EEB12 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0289E674252D84D6007EEB12 /* Home.xib */; };
 		02F5A68A252A1B50001F9753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A689252A1B50001F9753 /* AppDelegate.swift */; };
 		02F5A68E252A1B50001F9753 /* CoolSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A68D252A1B50001F9753 /* CoolSignInViewController.swift */; };
@@ -60,12 +61,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0216285125429BA60019974B /* GoogleService-InfoProd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-InfoProd.plist"; sourceTree = "<group>"; };
+		0213B8F325462504000B58D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		021BB5B8253E5C4500D942F2 /* Production.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Production.plist; sourceTree = "<group>"; };
 		021D2C67253B6ADE002BF969 /* WarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmViewController.swift; sourceTree = "<group>"; };
 		021D2C6F253B6AEF002BF969 /* WarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarmViewController.xib; sourceTree = "<group>"; };
 		022F0345253662AD0054D57F /* CoolSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolSignInViewController.xib; sourceTree = "<group>"; };
-		022F034A253670EE0054D57F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		027F72092546230B00BDAD55 /* GoogleService-Dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Dev.plist"; sourceTree = "<group>"; };
+		027F720A2546230B00BDAD55 /* GoogleService-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Prod.plist"; sourceTree = "<group>"; };
 		0289E674252D84D6007EEB12 /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		02F5A686252A1B50001F9753 /* COOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F5A689252A1B50001F9753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,33 @@
 			path = Signin;
 			sourceTree = "<group>";
 		};
+		027F7203254620E200BDAD55 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				027F7207254621CC00BDAD55 /* Firebase */,
+				0213B8F325462504000B58D0 /* GoogleService-Info.plist */,
+				02F5A692252A1B56001F9753 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		027F7207254621CC00BDAD55 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				027F7208254622BB00BDAD55 /* GoogleServicePlists */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		027F7208254622BB00BDAD55 /* GoogleServicePlists */ = {
+			isa = PBXGroup;
+			children = (
+				027F72092546230B00BDAD55 /* GoogleService-Dev.plist */,
+				027F720A2546230B00BDAD55 /* GoogleService-Prod.plist */,
+			);
+			path = GoogleServicePlists;
+			sourceTree = "<group>";
+		};
 		02F5A67D252A1B50001F9753 = {
 			isa = PBXGroup;
 			children = (
@@ -191,12 +220,10 @@
 				022F0344253662820054D57F /* Signin */,
 				DEBC2A4C252BDF30009F787B /* TabBar */,
 				DE883CF9252BC79600FB78DA /* Screens */,
+				027F7203254620E200BDAD55 /* Resources */,
 				02F5A689252A1B50001F9753 /* AppDelegate.swift */,
-				02F5A692252A1B56001F9753 /* Assets.xcassets */,
 				02F5A697252A1B56001F9753 /* Enterprise.plist */,
 				021BB5B8253E5C4500D942F2 /* Production.plist */,
-				0216285125429BA60019974B /* GoogleService-InfoProd.plist */,
-				022F034A253670EE0054D57F /* GoogleService-Info.plist */,
 				02F5A6C5252A3488001F9753 /* LaunchScreen.xib */,
 			);
 			path = COOL;
@@ -378,6 +405,7 @@
 				02F5A684252A1B50001F9753 /* Resources */,
 				49B18BC82CBFACA7B9A8FE72 /* [CP] Embed Pods Frameworks */,
 				49695F7F82B4F749A161B2FC /* [CP] Copy Pods Resources */,
+				027F720225461F8F00BDAD55 /* Update Firebase Configuration */,
 			);
 			buildRules = (
 			);
@@ -485,14 +513,15 @@
 			files = (
 				DE6423CC2538D16200A15130 /* CoolMindWelcome.xib in Resources */,
 				02F5A6C6252A3488001F9753 /* LaunchScreen.xib in Resources */,
-				0216285225429BA60019974B /* GoogleService-InfoProd.plist in Resources */,
+				027F720C2546230B00BDAD55 /* GoogleService-Prod.plist in Resources */,
 				0289E675252D84D6007EEB12 /* Home.xib in Resources */,
 				DE4A4E54252E9C13000F5739 /* History.xib in Resources */,
 				02F5A693252A1B56001F9753 /* Assets.xcassets in Resources */,
 				DE677510253B3D9700B01A65 /* Profile.xib in Resources */,
 				022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */,
+				0213B8F425462504000B58D0 /* GoogleService-Info.plist in Resources */,
 				021D2C70253B6AEF002BF969 /* WarmViewController.xib in Resources */,
-				022F034B253670EE0054D57F /* GoogleService-Info.plist in Resources */,
+				027F720B2546230B00BDAD55 /* GoogleService-Dev.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +542,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		027F720225461F8F00BDAD55 /* Update Firebase Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update Firebase Configuration";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "eval \"${GCC_PREPROCESSOR_DEFINITIONS}\"\nFIREBASE_RESOURCES_PATH=\"${PWD}/COOL/Resources/Firebase\"\nFIREBASE_POSSIBLE_CONFIGS_PATH=\"${FIREBASE_RESOURCES_PATH}/GoogleServicePlists\"\nPROD_CONFIG_PATH=\"${FIREBASE_POSSIBLE_CONFIGS_PATH}/GoogleService-Prod.plist\"\nDEVELOPMENT_CONFIG_PATH=\"${FIREBASE_POSSIBLE_CONFIGS_PATH}/GoogleService-Dev.plist\"\nCURRENT_CONFIG_PATH=\"${FIREBASE_RESOURCES_PATH}/GoogleService-Info.plist\"\n\nif [ -f \"${CURRENT_CONFIG_PATH}\" ]; then\nrm \"${CURRENT_CONFIG_PATH}\"\nfi\n\necho \"[Build Config] = ${CONFIGURATION}\"\nif [ \"${CONFIGURATION}\" = \"Prod\" ]; then\n    echo 'Setting up Firebase for Production...'\n    cp \"${PROD_CONFIG_PATH}\" \"${CURRENT_CONFIG_PATH}\"\nelse\n    echo 'Setting up Firebase for Enterprise...'\n    cp \"${DEVELOPMENT_CONFIG_PATH}\" \"${CURRENT_CONFIG_PATH}\"\nfi\n";
+		};
 		34E3922A62E53CBEF1BD7569 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -766,7 +813,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7T4GSVKLCG;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
@@ -775,9 +822,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.parvati.enterprise.cool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parvati.coolmobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Cool App Development";
+				PROVISIONING_PROFILE_SPECIFIER = "Cool iOS App Production";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -898,9 +945,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7T4GSVKLCG;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_MASTER_OBJECT_FILE = NO;
@@ -911,7 +958,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.parvati.enterprise.cool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Cool App Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;

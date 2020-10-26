@@ -42,15 +42,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        
+        var result = true
         ApplicationDelegate.shared.application(
                     app,
                     open: url,
                     sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
                     annotation: options[UIApplication.OpenURLOptionsKey.annotation]
                 )
+        result = GIDSignIn.sharedInstance().handle(url)
         
-        return GIDSignIn.sharedInstance().handle(url)
+        return result
     }
 }
 
