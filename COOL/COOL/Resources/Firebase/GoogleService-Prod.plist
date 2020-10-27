@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>916941246396-mlaj41gu1def84rifs08mscceit63pu5.apps.googleusercontent.com</string>
+	<string>710097214805-1bgj48ng14s169mlk3ekg4fe3318ahv0.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.916941246396-mlaj41gu1def84rifs08mscceit63pu5</string>
+	<string>com.googleusercontent.apps.710097214805-1bgj48ng14s169mlk3ekg4fe3318ahv0</string>
 	<key>API_KEY</key>
-	<string>AIzaSyB7lHHYYVM86Xis-QXO-gsz5VLIejzYmVI</string>
+	<string>AIzaSyAwYZWJoegl3tAsgm1-it5kgn9iYIkkOfA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>916941246396</string>
+	<string>710097214805</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.parvati.coolmobile</string>
 	<key>PROJECT_ID</key>
-	<string>cool-prod-845c5</string>
+	<string>cool-prod-2e7e2</string>
 	<key>STORAGE_BUCKET</key>
-	<string>cool-prod-845c5.appspot.com</string>
+	<string>cool-prod-2e7e2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:916941246396:ios:25ea27ef13fc4bbdcfa5b9</string>
+	<string>1:710097214805:ios:06fb72227c1adea14f63dc</string>
 	<key>DATABASE_URL</key>
-	<string>https://cool-prod-845c5.firebaseio.com</string>
+	<string>https://cool-prod-2e7e2.firebaseio.com</string>
 </dict>
 </plist>

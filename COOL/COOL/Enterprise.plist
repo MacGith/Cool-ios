@@ -22,31 +22,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.parvati.enterprise.cool</string>
+			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb362661661591356</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.parvati.enterprise.cool</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.248377948195-eui3gfg40rp9qh91q42bs406r80oi8em</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string></string>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.parvati.coolmobile</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
 				<string>fb768745140633550</string>
 			</array>
 		</dict>
@@ -54,11 +33,28 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.parvati.coolmobile</string>
+			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.916941246396-mlaj41gu1def84rifs08mscceit63pu5</string>
+				<string>com.googleusercontent.apps.710097214805-1bgj48ng14s169mlk3ekg4fe3318ahv0</string>
+				<string>com.googleusercontent.apps.391043073373-hot3a211lodffkkg344ek6v4pptm4btg</string>
 			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array/>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>

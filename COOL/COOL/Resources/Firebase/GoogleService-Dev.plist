@@ -3,34 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>248377948195-eui3gfg40rp9qh91q42bs406r80oi8em.apps.googleusercontent.com</string>
+	<string>391043073373-hot3a211lodffkkg344ek6v4pptm4btg.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.248377948195-eui3gfg40rp9qh91q42bs406r80oi8em</string>
+	<string>com.googleusercontent.apps.391043073373-hot3a211lodffkkg344ek6v4pptm4btg</string>
 	<key>API_KEY</key>
-	<string>AIzaSyArr2gv88jlrSDzv7J85J38anTZ09AP-Ck</string>
+	<string>AIzaSyDX-aDqSbMJjrf1aTydrBGAEwwaUT3aHMU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>248377948195</string>
+	<string>391043073373</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.parvati.enterprise.cool</string>
 	<key>PROJECT_ID</key>
-	<string>cool-5f3cc</string>
+	<string>cool-dev-b3880</string>
 	<key>STORAGE_BUCKET</key>
-	<string>cool-5f3cc.appspot.com</string>
+	<string>cool-dev-b3880.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:248377948195:ios:6bcaf25ba1080970479996</string>
+	<string>1:391043073373:ios:94a80c18d2e50c71dcd4b4</string>
 	<key>DATABASE_URL</key>
-	<string>https://cool-5f3cc.firebaseio.com</string>
+	<string>https://cool-dev-b3880.firebaseio.com</string>
 </dict>
 </plist>
