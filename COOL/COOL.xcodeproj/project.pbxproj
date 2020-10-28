@@ -13,9 +13,11 @@
 		021D2C68253B6ADE002BF969 /* WarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D2C67253B6ADE002BF969 /* WarmViewController.swift */; };
 		021D2C70253B6AEF002BF969 /* WarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021D2C6F253B6AEF002BF969 /* WarmViewController.xib */; };
 		022F0346253662AD0054D57F /* CoolSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022F0345253662AD0054D57F /* CoolSignInViewController.xib */; };
+		0263B7DE2547F44100C7953A /* FireBaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263B7DD2547F44100C7953A /* FireBaseAuthManager.swift */; };
 		027F720B2546230B00BDAD55 /* GoogleService-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027F72092546230B00BDAD55 /* GoogleService-Dev.plist */; };
 		027F720C2546230B00BDAD55 /* GoogleService-Prod.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027F720A2546230B00BDAD55 /* GoogleService-Prod.plist */; };
 		0289E675252D84D6007EEB12 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0289E674252D84D6007EEB12 /* Home.xib */; };
+		02BB28BC2548630000E76BE3 /* CoolServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BB28BB2548630000E76BE3 /* CoolServiceProvider.swift */; };
 		02F5A68A252A1B50001F9753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A689252A1B50001F9753 /* AppDelegate.swift */; };
 		02F5A68E252A1B50001F9753 /* CoolSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5A68D252A1B50001F9753 /* CoolSignInViewController.swift */; };
 		02F5A693252A1B56001F9753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F5A692252A1B56001F9753 /* Assets.xcassets */; };
@@ -64,9 +66,11 @@
 		021D2C67253B6ADE002BF969 /* WarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmViewController.swift; sourceTree = "<group>"; };
 		021D2C6F253B6AEF002BF969 /* WarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarmViewController.xib; sourceTree = "<group>"; };
 		022F0345253662AD0054D57F /* CoolSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolSignInViewController.xib; sourceTree = "<group>"; };
+		0263B7DD2547F44100C7953A /* FireBaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseAuthManager.swift; sourceTree = "<group>"; };
 		027F72092546230B00BDAD55 /* GoogleService-Dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Dev.plist"; sourceTree = "<group>"; };
 		027F720A2546230B00BDAD55 /* GoogleService-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Prod.plist"; sourceTree = "<group>"; };
 		0289E674252D84D6007EEB12 /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
+		02BB28BB2548630000E76BE3 /* CoolServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolServiceProvider.swift; sourceTree = "<group>"; };
 		02F5A686252A1B50001F9753 /* COOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F5A689252A1B50001F9753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02F5A68D252A1B50001F9753 /* CoolSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolSignInViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 			children = (
 				02F5A68D252A1B50001F9753 /* CoolSignInViewController.swift */,
 				022F0345253662AD0054D57F /* CoolSignInViewController.xib */,
+				0263B7DD2547F44100C7953A /* FireBaseAuthManager.swift */,
 			);
 			path = Signin;
 			sourceTree = "<group>";
@@ -176,6 +181,14 @@
 				027F720A2546230B00BDAD55 /* GoogleService-Prod.plist */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		02BB28BA254862D400E76BE3 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				02BB28BB2548630000E76BE3 /* CoolServiceProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		02F5A67D252A1B50001F9753 = {
@@ -203,6 +216,7 @@
 		02F5A688252A1B50001F9753 /* COOL */ = {
 			isa = PBXGroup;
 			children = (
+				02BB28BA254862D400E76BE3 /* Provider */,
 				DE47CA3C253F5A10001B04DD /* ViewModel */,
 				DE47CA30253F5887001B04DD /* Model */,
 				DE9F207725375F19009461CF /* UserDefaults */,
@@ -691,6 +705,8 @@
 			files = (
 				DEBC2A4E252BDF76009F787B /* MainTabBar.swift in Sources */,
 				DEBC2A6A252BE545009F787B /* Profile.swift in Sources */,
+				0263B7DE2547F44100C7953A /* FireBaseAuthManager.swift in Sources */,
+				02BB28BC2548630000E76BE3 /* CoolServiceProvider.swift in Sources */,
 				DEBC2A6F252BE567009F787B /* Discover.swift in Sources */,
 				DEBC2A60252BE505009F787B /* Stats.swift in Sources */,
 				02F5A68E252A1B50001F9753 /* CoolSignInViewController.swift in Sources */,
