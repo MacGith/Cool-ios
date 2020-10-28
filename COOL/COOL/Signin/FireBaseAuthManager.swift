@@ -8,9 +8,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
-import FBSDKCoreKit
 import FBSDKLoginKit
-
 
 final class FireBaseAuthManager: NSObject {
     
@@ -75,13 +73,7 @@ final class FireBaseAuthManager: NSObject {
             completion(dataResult, nil)
         }
     }
-    
-    private func launchTabBar() {
-        let tabBar = MainTabBar()
-        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        appDelegate?.window?.rootViewController = tabBar
-    }
-    
+   
     /// Save user info to User Defaults
     /// - Parameter user: signed in user
     private func saveUserInfo(authData: AuthDataResult) {

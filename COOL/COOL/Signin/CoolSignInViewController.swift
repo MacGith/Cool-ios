@@ -8,19 +8,15 @@
 import UIKit
 import FirebaseAuth
 import GoogleSignIn
-import FBSDKLoginKit
 
 class CoolSignInViewController: UIViewController {
     
     @IBOutlet weak var googleLoginButton: GIDSignInButton!
-    
     @IBOutlet weak var fbLoginButton: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         view.backgroundColor = .white
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
@@ -34,16 +30,43 @@ class CoolSignInViewController: UIViewController {
     /// A guidance label, buttons linking social media methods to login.
     fileprivate func configureUI() {
         //if user previously sign launch home
-        if isUserPreviouslySignInGoogle() {
+        if isUserPreviouslySignInWithGmail() || isUserPreviouslySignInWithFB() {
+            saveUserInfo()
             launchHome()
         }
     }
     
-    func isUserPreviouslySignInGoogle() -> Bool {
+    private func saveUserInfo() {
+        let user = Auth.auth().currentUser
+        let userDefaults = UserDefaults.standard
+        if let user = user {
+          let _ = user.uid
+          let _ = user.photoURL
+          userDefaults.setValue(user.displayName, forKey: UDKeys.firstName)
+          userDefaults.setValue(nil, forKey: UDKeys.lastName)
+          userDefaults.setValue(user.email, forKey: UDKeys.email)
+        }
+    }
+    
+    private func isUserPreviouslySignInWithGmail() -> Bool {
         guard let isSignIn = GIDSignIn.sharedInstance()?.hasPreviousSignIn(), isSignIn else {
             return false
         }
         return true
+    }
+    
+    private func isUserPreviouslySignInWithFB() -> Bool {
+        if let providerData = Auth.auth().currentUser?.providerData {
+            for userInfo in providerData {
+                switch userInfo.providerID {
+                case "facebook.com":
+                    return true
+                default:
+                    print("provider is \(userInfo.providerID)")
+                }
+            }
+        }
+        return false
     }
     
     func launchHome() {
@@ -71,12 +94,8 @@ class CoolSignInViewController: UIViewController {
 
 extension CoolSignInViewController: GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            print("Failed to log into Google:", error)
-            return
-        }
-       
         guard let idToken = user?.authentication.idToken, let accessToken = user?.authentication.accessToken else {
+            print("Failed to log into Google:  \(error.localizedDescription)")
             return
         }
        
@@ -91,4 +110,3 @@ extension CoolSignInViewController: GIDSignInDelegate {
         }
     }
 }
-
