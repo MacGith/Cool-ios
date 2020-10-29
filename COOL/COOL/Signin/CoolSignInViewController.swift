@@ -31,28 +31,40 @@ class CoolSignInViewController: UIViewController {
     fileprivate func configureUI() {
         //if user previously sign launch home
         if isUserPreviouslySignInWithGmail() || isUserPreviouslySignInWithFB() {
-            saveUserInfo()
             launchHome()
         }
     }
     
+    /// After successful Google Sign In, this function populates a new CoolUser object with user information and calls the ViewModel.saveUserInfo() to persist the data
     private func saveUserInfo() {
-        let user = Auth.auth().currentUser
-        let userDefaults = UserDefaults.standard
-        if let user = user {
-          let _ = user.uid
-          let _ = user.photoURL
-          userDefaults.setValue(user.displayName, forKey: UDKeys.firstName)
-          userDefaults.setValue(nil, forKey: UDKeys.lastName)
-          userDefaults.setValue(user.email, forKey: UDKeys.email)
+        if let user = Auth.auth().currentUser {
+            let newUser = CoolUser()
+            
+            newUser.firstName = user.displayName
+            newUser.lastName = nil
+            newUser.email = user.email
+            
+            func getPhoto(_ photoURL: URL?, completion: (_ image: UIImage?) -> Void) {
+                if let photoURL = user.photoURL {
+                    if let photoData = try? Data(contentsOf: photoURL) {
+                        completion(UIImage(data: photoData))
+                    }
+                }
+            }
+            
+            getPhoto(user.photoURL) { (image) in
+                newUser.photo = image
+                ViewModel.saveUserInfo(userInfo: newUser)
+            }
         }
     }
     
     private func isUserPreviouslySignInWithGmail() -> Bool {
-        guard let isSignIn = GIDSignIn.sharedInstance()?.hasPreviousSignIn(), isSignIn else {
-            return false
+        if GIDSignIn.sharedInstance().hasPreviousSignIn() {
+            return true
         }
-        return true
+        
+        return false
     }
     
     private func isUserPreviouslySignInWithFB() -> Bool {
@@ -107,6 +119,7 @@ extension CoolSignInViewController: GIDSignInDelegate {
                 return
             }
             self?.launchHome()
+            self?.saveUserInfo()
         }
     }
 }

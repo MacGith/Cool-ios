@@ -24,4 +24,8 @@ public class UDKeys {
     class var photo: String {
         return "photo"
     }
+    
+    class var user: String {
+        return "user"
+    }
 }

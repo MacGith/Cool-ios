@@ -42,16 +42,19 @@ class Profile: UIViewController {
         
         navigationItem.title = "\(dateFormatter.string(from: today))\tScore +\(score)"
         
+        // User
+        let user = ViewModel.getUserInfo()
+        
         // Photo
-        if let photo = UserDefaults.standard.object(forKey: UDKeys.photo) as? UIImage {
+        if let photo = user?.photo {
             photoView.image = photo
         } else {
             photoView.image = UIImage(systemName: "person.crop.circle.fill")
         }
         
         // Name
-        let firstName = UserDefaults.standard.object(forKey: UDKeys.firstName) as? String
-        let lastName = UserDefaults.standard.object(forKey: UDKeys.lastName) as? String
+        let firstName = user?.firstName
+        let lastName = user?.lastName
         
         let nameAttributed = NSMutableAttributedString(string: "")
         if let first = firstName {
@@ -64,7 +67,7 @@ class Profile: UIViewController {
         nameLabel.attributedText = nameAttributed
         
         // Email
-        let email = UserDefaults.standard.object(forKey: UDKeys.email) as? String
+        let email = user?.email
         
         let emailAttributed = NSMutableAttributedString(string: "")
         emailAttributed.append(NSAttributedString(string: "Email ", attributes: [.font: UIFont.systemFont(ofSize: 17, weight: .bold)]))
