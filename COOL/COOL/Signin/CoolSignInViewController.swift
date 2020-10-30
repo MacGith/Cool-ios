@@ -94,6 +94,7 @@ class CoolSignInViewController: UIViewController {
                 return
             }
             self?.launchHome()
+            self?.saveUserInfo()
         }
     }
     

@@ -19,7 +19,11 @@ class CoolUser: NSObject, NSSecureCoding {
         coder.encode(city, forKey: "city")
         coder.encode(country, forKey: "country")
         coder.encode(password, forKey: "password")
+        
         coder.encode(photo, forKey: "photo")
+        
+        coder.encode(totalScore, forKey: "totalScore")
+        coder.encode(todayScore, forKey: "todayScore")
     }
     
     required init?(coder: NSCoder) {
@@ -31,6 +35,9 @@ class CoolUser: NSObject, NSSecureCoding {
         password = coder.decodeObject(forKey: "password") as? String
         
         photo = coder.decodeObject(forKey: "photo") as? UIImage
+        
+        totalScore = coder.decodeObject(forKey: "totalScore") as? Int
+        todayScore = coder.decodeObject(forKey: "todayScore") as? Int
     }
     
     override init() {
@@ -45,4 +52,7 @@ class CoolUser: NSObject, NSSecureCoding {
     var password: String?
     
     var photo: UIImage?
+    
+    var totalScore: Int?
+    var todayScore: Int?
 }
