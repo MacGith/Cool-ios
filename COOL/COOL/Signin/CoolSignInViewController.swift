@@ -72,6 +72,7 @@ class CoolSignInViewController: UIViewController {
             for userInfo in providerData {
                 switch userInfo.providerID {
                 case "facebook.com":
+                    self.saveUserInfo()
                     return true
                 default:
                     print("provider is \(userInfo.providerID)")
