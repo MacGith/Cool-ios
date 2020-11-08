@@ -14,6 +14,10 @@ class CoolSignInViewController: UIViewController {
     @IBOutlet weak var googleLoginButton: GIDSignInButton!
     @IBOutlet weak var fbLoginButton: UIButton!
     
+    struct Constants {
+        static let facebook = "facebook.com"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -71,7 +75,7 @@ class CoolSignInViewController: UIViewController {
         if let providerData = Auth.auth().currentUser?.providerData {
             for userInfo in providerData {
                 switch userInfo.providerID {
-                case "facebook.com":
+                case Constants.facebook:
                     self.saveUserInfo()
                     return true
                 default:
